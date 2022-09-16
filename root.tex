@@ -1,0 +1,108 @@
+
+%% bare_conf.tex
+%% V1.4b
+%% 2015/08/26
+%% by Michael Shell
+%% See:
+%% http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.8b or later) with an IEEE
+%% conference paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/pkg/ieeetran
+%% and
+%% http://www.ieee.org/
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE! 
+%% User assumes all risk.
+%% In no event shall the IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%*************************************************************************
+
+\documentclass[conference]{IEEEtran}
+\usepackage{standalone}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage{tabularx}
+\usepackage{pgfplots, pgfplotstable}
+\usepackage{textcomp}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{lipsum}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage[T1]{fontenc}
+% \usepackage{bera}% optional: just to have a nice mono-spaced font
+\makeatletter
+\newcommand\BeraMonottfamily{%
+  \def\fvm@Scale{0.85}% scales the font down
+  \fontfamily{fvm}\selectfont% selects the Bera Mono font
+}
+\makeatother
+
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{wasysym}
+\usepackage[flushleft]{threeparttable}% (uncomment the ones you want to load)
+
+\begin{document}
+
+% paper title
+\title{Your Publication Title Goes Here}
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{
+ \IEEEauthorblockN{Author 1\IEEEauthorrefmark{1}, Author 2 \IEEEauthorrefmark{2}, Author 3\IEEEauthorrefmark{1}}
+ \IEEEauthorblockA{\IEEEauthorrefmark{1}School of Engineering, University of Warwick, Coventry, UK}
+ \IEEEauthorblockA{\IEEEauthorrefmark{2}Department of Electronic and Electrical Engineering, Trinity College Dublin, Ireland}
+}
+
+% make the title area
+\maketitle
+
+\thispagestyle{plain}
+\pagestyle{plain}
+
+\begin{abstract}
+
+Your abstract goes here.
+  
+\end{abstract}
+
+\bstctlcite{IEEEexample:BSTcontrol}
+
+\IEEEpeerreviewmaketitle
+
+\input{content/introduction}
+\input{content/background}
+\input{content/experiments}
+\input{content/conclusion}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
